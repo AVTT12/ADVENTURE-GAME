@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batman — The Dark Knight</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <svg class="bat-logo" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 10 C30 10, 5 25, 0 45 C10 35, 20 38, 30 45 C35 30, 40 25, 50 22 C60 25, 65 30, 70 45 C80 38, 90 35, 100 45 C95 25, 70 10, 50 10 Z" fill="#f0c030"/>
+      </svg>
+      <span>BATMAN</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">The Legend</a></li>
+      <li><a href="#gadgets">Gadgets</a></li>
+      <li><a href="#villains">Rogues Gallery</a></li>
+      <li><a href="#quotes">Quotes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="bat-signal"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">I AM <span class="highlight">BATMAN</span></h1>
+      <p class="hero-subtitle">Vengeance. Justice. Darkness.</p>
+      <p class="hero-tagline">Gotham City's protector. The World's Greatest Detective.</p>
+      <a href="#about" class="btn-primary">Enter the Batcave</a>
+    </div>
+    <div class="bats-container" id="bats"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">The <span class="highlight">Legend</span></h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon">&#9760;</div>
+          <h3>Bruce Wayne</h3>
+          <p>Billionaire philanthropist by day. Gotham's guardian by night. After witnessing his parents' murder as a child, Bruce Wayne vowed to wage war on crime.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">&#128269;</div>
+          <h3>The Detective</h3>
+          <p>The World's Greatest Detective. Batman's mind is his most powerful weapon — capable of solving the unsolvable and anticipating every move his enemies make.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">&#9889;</div>
+          <h3>The Warrior</h3>
+          <p>Master of over 127 martial arts disciplines. Peak human physical condition. No superpowers — just years of relentless training and unbreakable willpower.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gadgets Section -->
+  <section id="gadgets" class="gadgets">
+    <div class="container">
+      <h2 class="section-title">The <span class="highlight">Arsenal</span></h2>
+      <div class="gadgets-grid">
+        <div class="gadget-item">
+          <div class="gadget-icon">🦇</div>
+          <h3>Batarang</h3>
+          <p>Precision bat-shaped throwing weapon. Returns to the thrower. Can be remote-controlled.</p>
+        </div>
+        <div class="gadget-item">
+          <div class="gadget-icon">🔫</div>
+          <h3>Grapple Gun</h3>
+          <p>Fires a grappling hook for rapid ascent and traversal across Gotham's skyline.</p>
+        </div>
+        <div class="gadget-item">
+          <div class="gadget-icon">💣</div>
+          <h3>Smoke Pellets</h3>
+          <p>Instant smoke screen for cover and escape. A classic in the Batman utility belt.</p>
+        </div>
+        <div class="gadget-item">
+          <div class="gadget-icon">🚗</div>
+          <h3>Batmobile</h3>
+          <p>Armored, high-speed vehicle. Turbine-powered. Packed with offensive and defensive systems.</p>
+        </div>
+        <div class="gadget-item">
+          <div class="gadget-icon">🧪</div>
+          <h3>Forensic Kit</h3>
+          <p>Mobile crime scene lab. DNA analysis, fingerprinting, and chemical identification.</p>
+        </div>
+        <div class="gadget-item">
+          <div class="gadget-icon">🛡️</div>
+          <h3>Batsuit</h3>
+          <p>Kevlar-composite armor. Fire-resistant. Bullet-resistant. Cape doubles as a glider.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Villains Section -->
+  <section id="villains" class="villains">
+    <div class="container">
+      <h2 class="section-title">Rogues <span class="highlight">Gallery</span></h2>
+      <div class="villains-grid">
+        <div class="villain-card" data-villain="joker">
+          <div class="villain-symbol">🃏</div>
+          <h3>The Joker</h3>
+          <p>The Clown Prince of Crime. Batman's greatest nemesis. Agent of chaos and anarchy.</p>
+          <div class="villain-threat">Threat Level: <span class="threat-bar" data-level="10"></span></div>
+        </div>
+        <div class="villain-card" data-villain="twofaced">
+          <div class="villain-symbol">🎭</div>
+          <h3>Two-Face</h3>
+          <p>Harvey Dent, the fallen district attorney. Decisions governed by a scarred coin.</p>
+          <div class="villain-threat">Threat Level: <span class="threat-bar" data-level="8"></span></div>
+        </div>
+        <div class="villain-card" data-villain="riddler">
+          <div class="villain-symbol">❓</div>
+          <h3>The Riddler</h3>
+          <p>Edward Nygma. Compelled to leave clues. Batman's intellect is his only match.</p>
+          <div class="villain-threat">Threat Level: <span class="threat-bar" data-level="7"></span></div>
+        </div>
+        <div class="villain-card" data-villain="bane">
+          <div class="villain-symbol">💪</div>
+          <h3>Bane</h3>
+          <p>The man who broke the Bat. Venom-enhanced strength. A brilliant tactical mind.</p>
+          <div class="villain-threat">Threat Level: <span class="threat-bar" data-level="9"></span></div>
+        </div>
+        <div class="villain-card" data-villain="penguin">
+          <div class="villain-symbol">🐧</div>
+          <h3>The Penguin</h3>
+          <p>Oswald Cobblepot. Gotham's underworld kingpin behind a veneer of sophistication.</p>
+          <div class="villain-threat">Threat Level: <span class="threat-bar" data-level="6"></span></div>
+        </div>
+        <div class="villain-card" data-villain="catwoman">
+          <div class="villain-symbol">🐱</div>
+          <h3>Catwoman</h3>
+          <p>Selina Kyle. Ally, enemy, and love interest. Morally ambiguous master thief.</p>
+          <div class="villain-threat">Threat Level: <span class="threat-bar" data-level="7"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes Section -->
+  <section id="quotes" class="quotes">
+    <div class="container">
+      <h2 class="section-title">Words of the <span class="highlight">Dark Knight</span></h2>
+      <div class="quote-carousel">
+        <div class="quote-slide active">
+          <blockquote>"It's not who I am underneath, but what I do that defines me."</blockquote>
+          <cite>— Bruce Wayne / Batman</cite>
+        </div>
+        <div class="quote-slide">
+          <blockquote>"Why do we fall? So we can learn to pick ourselves up."</blockquote>
+          <cite>— Alfred Pennyworth</cite>
+        </div>
+        <div class="quote-slide">
+          <blockquote>"I wear a mask. And that mask, it's not to hide who I am, but to create what I am."</blockquote>
+          <cite>— Batman</cite>
+        </div>
+        <div class="quote-slide">
+          <blockquote>"You either die a hero or you live long enough to see yourself become the villain."</blockquote>
+          <cite>— Harvey Dent</cite>
+        </div>
+        <div class="quote-slide">
+          <blockquote>"The night is darkest just before the dawn. And I promise you, the dawn is coming."</blockquote>
+          <cite>— Harvey Dent</cite>
+        </div>
+      </div>
+      <div class="quote-controls">
+        <button class="quote-btn" id="prevQuote">&#8249;</button>
+        <div class="quote-dots" id="quoteDots"></div>
+        <button class="quote-btn" id="nextQuote">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bat">
+        <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 10 C30 10, 5 25, 0 45 C10 35, 20 38, 30 45 C35 30, 40 25, 50 22 C60 25, 65 30, 70 45 C80 38, 90 35, 100 45 C95 25, 70 10, 50 10 Z" fill="#f0c030"/>
+        </svg>
+      </div>
+      <p class="footer-text">Gotham City — Protecting the innocent since 1939</p>
+      <p class="footer-sub">Batman created by Bob Kane with Bill Finger. DC Comics.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
