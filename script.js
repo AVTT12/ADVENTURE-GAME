@@ -9,9 +9,9 @@
     bat.className = 'bat';
     bat.textContent = batEmojis[0];
 
-    const top = Math.random() * 80 + 10;          // 10–90% from top
-    const duration = Math.random() * 8 + 6;        // 6–14s
-    const delay = Math.random() * 10;              // stagger start
+    const top = Math.random() * 80 + 10;
+    const duration = Math.random() * 8 + 6;
+    const delay = Math.random() * 10;
 
     bat.style.cssText = `
       top: ${top}%;
@@ -48,7 +48,6 @@ document.querySelectorAll('.threat-bar').forEach(bar => {
   const nextBtn = document.getElementById('nextQuote');
   let current = 0;
 
-  // Create dots
   slides.forEach((_, i) => {
     const dot = document.createElement('div');
     dot.className = 'dot' + (i === 0 ? ' active' : '');
@@ -67,7 +66,6 @@ document.querySelectorAll('.threat-bar').forEach(bar => {
   prevBtn.addEventListener('click', () => goTo(current - 1));
   nextBtn.addEventListener('click', () => goTo(current + 1));
 
-  // Auto-advance every 6 seconds
   setInterval(() => goTo(current + 1), 6000);
 })();
 
@@ -83,7 +81,7 @@ document.querySelectorAll('.threat-bar').forEach(bar => {
   });
 })();
 
-// ===== VILLAIN CARD HOVER SOUND EFFECT (visual ripple) =====
+// ===== VILLAIN CARD HOVER =====
 document.querySelectorAll('.villain-card').forEach(card => {
   card.addEventListener('mouseenter', () => {
     card.style.boxShadow = '0 0 20px rgba(240,192,48,0.12)';

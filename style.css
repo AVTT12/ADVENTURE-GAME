@@ -325,12 +325,6 @@ body {
   vertical-align: middle;
 }
 
-.threat-bar::after {
-  content: var(--bars);
-}
-
-/* Built via JS */
-
 /* ===== QUOTES ===== */
 .quotes {
   padding: 7rem 0;
